@@ -7,7 +7,10 @@ and open the template in the editor.
     Created on : Apr 14, 2020, 1:49:41 AM
     Author     : Pham Bao
 */
-
+body
+{
+    margin:10px;
+}
 ul 
 {
   text-align: center;
