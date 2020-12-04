@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <b><title>UHCL MOCK SURVEY</title></b>
+    </h:head>
+    <h:outputStylesheet library="css" name="styles.css"/>
+    <h:body>
+        <h:form>
+        <center>
+            <h:graphicImage  width="40%" 
+   value = "resources/image/sig-line-uhcl-2-color.jpg"/> 
+            <h3>STUDENT COURSE EVALUATION QUESTIONNAIRE </h3>
+            <h:panelGrid id = "panel" columns = "2" style="width: 80%" columnClasses="one-nine" border="1" cellpadding="15">
+ <h:panelGroup>Course: </h:panelGroup>
+ <h:panelGroup><h:inputText value="#{q.course}" styleClass="bigtext"/></h:panelGroup>
+
+    <h:panelGroup>Instructor: </h:panelGroup>
+    <h:panelGroup><h:inputText value="#{q.name}"   styleClass="bigtext"/></h:panelGroup>
+
+    <h:panelGroup>Term And Year: </h:panelGroup>
+    <h:panelGroup><h:inputText value="#{q.year}" styleClass="bigtext"/></h:panelGroup>
+        </h:panelGrid>
+            <u><h3>PLEASE CROSS THE RESPONSE THAT REPRESENTS YOUR OPINION.</h3></u>
+        </center>
+<table>
+    <tbody>
+        <tr>
+            <td bgcolor="lightgray" class="column1"><center> <h4>TEACHING APPROACHES</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Strongly Agree</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Agree</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Neutral</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Disagree</h4></center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Strongly Disagree</h4> </center> </td>
+        </tr>
+    </tbody>
+</table>
+        <h:outputLabel value="#{q.questiones[0]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+        <br/><br/>
+        <h:outputLabel value="#{q.questiones[1]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+        <br/><br/>
+        <h:outputLabel value="#{q.questiones[2]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+        <br/><br/>
+        <h:outputLabel value="#{q.questiones[3]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+        <br/><br/>
+        <h:outputLabel value="#{q.questiones[4]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+        <br/><br/>
+        <h:outputLabel value="#{q.questiones[5]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+        <br/><br/>
+        <h:outputLabel value="#{q.questiones[6]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+        <br/><br/>
+        <h:outputLabel value="#{q.questiones[7]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+                    <br/>
+<table>
+    <tbody>
+        <tr>
+            <td class="column1"><center></center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Yes</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>No</h4> </center> </td>
+        </tr>
+    </tbody>
+</table>
+        <h:outputLabel value="#{q.questiones[8]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline1" value="#{c.choice}">
+            <f:selectItem  itemValue="Yes" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="No" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+            <br/><br/>
+        <h:outputLabel value="#{q.questiones[9]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline1" value="#{c.choice}">
+            <f:selectItem  itemValue="Yes" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="No" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+<br/><br/>
+<h:outputLabel value="#{q.questiones[10]}"></h:outputLabel> 
+<h:inputText value="#{c.choice}" styleClass="bigtext"/>
+<hr/><br/><hr/><br/><hr/>
+            
+<table>
+    <tbody>
+        <tr>
+            <td bgcolor="lightgray" class="column1"><center> <h4>FEEDBACK AND ASSESSMENT</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Strongly Agree</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Agree</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Neutral</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Disagree</h4></center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Strongly Disagree</h4> </center> </td>
+        </tr>
+    </tbody>
+</table>
+        <h:outputLabel value="#{q.questiones[11]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+                    <br/><br/>
+        <h:outputLabel value="#{q.questiones[12]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+                            <br/><br/>
+        <h:outputLabel value="#{q.questiones[13]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+        <br/><br/>
+        <h:outputLabel value="#{q.questiones[14]}"></h:outputLabel> 
+        <h:inputText value="#{c.choice}" styleClass="bigtext"/>
+        <hr/><br/><hr/><br/><hr/>
+        
+<table>
+    <tbody>
+        <tr>
+            <td bgcolor="lightgray" class="column1"><center> <h4>RESOURCES AND ADMINISTRATION</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Strongly Agree</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Agree</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Neutral</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Disagree</h4></center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Strongly Disagree</h4> </center> </td>
+        </tr>
+    </tbody>
+</table>
+                <h:outputLabel value="#{q.questiones[15]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+                    <br/><br/>
+        <h:outputLabel value="#{q.questiones[16]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+                            <br/><br/>
+        <h:outputLabel value="#{q.questiones[17]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+                <br/><br/>
+        <h:outputLabel value="#{q.questiones[18]}"></h:outputLabel> 
+        <h:inputText value="#{c.choice}" styleClass="bigtext"/>
+        <hr/><br/><hr/><br/><hr/>
+        
+<table>
+    <tbody>
+        <tr>
+            <td bgcolor="lightgray" class="column1"><center><h4>ADDITIONAL QUESTION </h4></center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Yes</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>No</h4> </center> </td>
+        </tr>
+    </tbody>
+</table>
+        <h:outputLabel value="#{q.questiones[19]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline1" value="#{c.choice}">
+            <f:selectItem  itemValue="Yes" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="No" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+            <br/><br/>
+        <h:outputLabel value="#{q.questiones[20]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline1" value="#{c.choice}">
+            <f:selectItem  itemValue="Yes" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="No" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+<br/><br/><h:outputLabel value="#{q.questiones[21]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline1" value="#{c.choice}">
+            <f:selectItem  itemValue="Yes" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="No" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+            <br/><br/>
+        <h:outputLabel value="#{q.questiones[22]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline1" value="#{c.choice}">
+            <f:selectItem  itemValue="Yes" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="No" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+<br/><br/><h:outputLabel value="#{q.questiones[23]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline1" value="#{c.choice}">
+            <f:selectItem  itemValue="Yes" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="No" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+            <br/><br/>
+        <h:outputLabel value="#{q.questiones[24]}"></h:outputLabel> 
+        <h:inputText value="#{c.choice}" styleClass="bigtext"/>
+        <hr/><br/><hr/><br/><hr/>
+<table>
+    <tbody>
+        <tr>
+            <td  bgcolor="lightgray" class="column1"><center><h4>OVERALL EXPERIENCE</h4></center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Yes</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>No</h4> </center> </td>
+        </tr>
+    </tbody>
+</table>   
+        
+        <h:outputLabel value="#{q.questiones[25]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline1" value="#{c.choice}">
+            <f:selectItem  itemValue="Yes" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="No" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+            <br/><br/>
+        <h:outputLabel value="#{q.questiones[26]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline1" value="#{c.choice}">
+            <f:selectItem  itemValue="Yes" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="No" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>            <br/>
+<table>
+    <tbody>
+        <tr>
+            <td class="column1"><center><h4></h4></center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Excellent</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Very good</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Good</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Fair</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Poor</h4> </center> </td>
+        </tr>
+    </tbody>
+</table>
+                <h:outputLabel value="#{q.questiones[27]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Excellent" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Very good" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Good" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Fair" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Poor" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+                            <br/><br/>
+<table>
+    <tbody>
+        <tr>
+            <td class="column1"><center><h4></h4></center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>A: 0 – 4h</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>B: 5 – 8h </h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>C: 9 – 12h</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>D: 12 – 16h</h4> </center> </td>
+        </tr>
+    </tbody>
+</table>   
+                                <h:outputLabel value="#{q.questiones[28]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline2" value="#{c.choice}">
+            <f:selectItem  itemValue="Excellent" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Very good" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Good" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Fair" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+         </h:selectOneRadio>  <br/><br/>
+         
+    <h:outputLabel value="#{q.questiones[29]}"></h:outputLabel> 
+        <h:inputText value="#{c.choice}" styleClass="bigtext"/>
+        <hr/><br/><hr/><br/><hr/>
+               
+<table>
+    <tbody>
+        <tr>
+            <td bgcolor="lightgray" class="column1"><center> <h4>STUDENT SELF EVALUATION<br/>Please comment on your own work for this course.  </h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Strongly Agree</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Agree</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Neutral</h4> </center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Disagree</h4></center> </td>
+            <td bgcolor="lightgray" class="column2"><center> <h4>Strongly Disagree</h4> </center> </td>
+        </tr>
+    </tbody>
+</table>
+                <h:outputLabel value="#{q.questiones[30]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+                <br/><br/>        <h:outputLabel value="#{q.questiones[31]}"></h:outputLabel>              
+        <h:selectOneRadio  styleClass="radioinline" value="#{c.choice}">
+            <f:selectItem  itemValue="Strongly Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Argree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="NeuTral" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+            <f:selectItem  itemValue="Strongly Disargree" itemLabel="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/>
+        </h:selectOneRadio>
+                <br/><br/>
+        
+        <h:outputLabel value="#{q.questiones[32]}"></h:outputLabel> 
+        <h:inputText value="#{c.choice}" styleClass="bigtext"/>
+        <hr/><br/><hr/><br/><hr/>
+
+<center>         
+<ul>
+    <li> #{q.questiones[33]}<br/><br/><h:inputTextarea value="#{c.choice}" styleClass="smalltext"/> </li><br/><br/>
+    <li> #{q.questiones[34]}<br/><br/><h:inputTextarea value="#{c.choice}" styleClass="smalltext"/> </li><br/><br/>
+    <li> #{q.questiones[35]}<br/><br/><h:inputTextarea value="#{c.choice}" styleClass="smalltext"/> </li><br/><br/>
+    <li> #{q.questiones[36]}<br/><br/><h:inputTextarea value="#{c.choice}" styleClass="smalltext"/> </li><br/><br/>
+
+</ul>
+                    <h3>THANK YOU FOR YOUR TIME AND FOR YOUR VALUABLE FEEDBACK.</h3>
+
+        <br/><br/><br/>
+        <h:commandButton value="Submit" action="summary" >                     
+            <f:actionListener binding="#{c.storedata()}" />
+    </h:commandButton>
+   </center>
+        </h:form>
+
+        
+    </h:body>
+
+</html>
+

@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 14, 2020, 1:49:41 AM
+    Author     : Pham Bao
+*/
+
+ul 
+{
+  text-align: center;
+  list-style: inside;
+}
+
+.customHeader{
+    background-color: lightgray;
+    background-image: none;
+}
+
+.custombackground{
+    background-color: lightgray;
+    font-size: 10;
+    font-weight: bold;
+    width: 100%
+}
+.custombackground1{
+    background-color: lightgray;
+    font-size: 10;
+    font-weight: bold;
+    width: 10%
+}
+.one-nine {
+     width: 15%;
+}
+
+.sixty-percent{
+     width: 50px;
+
+}
+.fivepercent{
+    width: 10px;
+}
+
+.top-alignment {
+     vertical-align: top;
+}
+
+div.shiftright {
+  position: absolute;
+  right: 10px;  
+} 
+.bigtext{
+    width : 100%;
+    border: 0;
+    height: 20px;
+        
+    
+}
+.smalltext
+{
+    width : 30%;
+    height: 200px;
+}
+.column1 { width: 1000px; }
+.column2 { width: 110px; }
+
+.radioinline
+{
+    position:absolute;
+    right: 270px;  
+    display: inline-block;
+    height: 18px; 
+}
+.radioinline1
+{
+    position:absolute;
+    right: 620px;  
+    display: inline-block;
+    height: 18px; 
+}
+.radioinline2
+{
+    position:absolute;
+    right: 385px;  
+    display: inline-block;
+    height: 18px; 
+}
